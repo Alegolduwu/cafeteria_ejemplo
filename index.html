@@ -14,12 +14,12 @@
   </header>
 
   <nav class="menu-tabs">
-    <button class="tab active" onclick="showSection('infusiones')">Infusiones</button>
-    <button class="tab" onclick="showSection('masas')">Masas</button>
-    <button class="tab" onclick="showSection('otros')">Otros</button>
+    <a href="#infusiones" class="tab">Infusiones</a>
+    <a href="#masas" class="tab">Masas</a>
+    <a href="#otros" class="tab">Otros</a>
   </nav>
 
-    <section id="infusiones" class="menu-section">
+  <section id="infusiones" class="menu-section">
     <h2>INFUSIONES</h2>
 
     <div class="infusion-card">
@@ -55,7 +55,7 @@
     </div>
   </section>
 
-  <section id="masas" class="menu-section hidden">
+  <section id="masas" class="menu-section">
     <h2>Masas</h2>
     <ul>
       <li>Medialuna de manteca - $900</li>
@@ -64,7 +64,7 @@
     </ul>
   </section>
 
-  <section id="otros" class="menu-section hidden">
+  <section id="otros" class="menu-section">
     <h2>Otros</h2>
     <ul>
       <li>Café con leche - $2200</li>
@@ -75,14 +75,5 @@
   <footer>
     <p>Escaneá el QR para ver este menú 📲</p>
   </footer>
-
-  <script>
-    function showSection(id) {
-      document.querySelectorAll('.menu-section').forEach(s => s.classList.add('hidden'));
-      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-      document.getElementById(id).classList.remove('hidden');
-      document.querySelector(`.tab[onclick*="${id}"]`).classList.add('active');
-    }
-  </script>
 </body>
 </html>
