@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafetería - Menú</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <img src="logo.png" alt="Logo de la cafetería" class="logo">
+    <h1>Cafetería Delicias</h1>
+    <p>📍 Av. Siempre Viva 123, Ciudad</p>
+  </header>
+
+  <nav class="menu-tabs">
+    <button class="tab active" onclick="showSection('infusiones')">Infusiones</button>
+    <button class="tab" onclick="showSection('masas')">Masas</button>
+    <button class="tab" onclick="showSection('otros')">Otros</button>
+  </nav>
+
+  <section id="infusiones" class="menu-section">
+    <h2>Infusiones</h2>
+    <ul>
+      <li>Té negro - $1500</li>
+      <li>Té verde - $1500</li>
+      <li>Manzanilla - $1400</li>
+      <li>Matcha Latte - $2500</li>
+    </ul>
+  </section>
+
+  <section id="masas" class="menu-section hidden">
+    <h2>Masas</h2>
+    <ul>
+      <li>Medialuna de manteca - $900</li>
+      <li>Brownie con nuez - $2000</li>
+      <li>Tarta de manzana - $2300</li>
+    </ul>
+  </section>
+
+  <section id="otros" class="menu-section hidden">
+    <h2>Otros</h2>
+    <ul>
+      <li>Café con leche - $2200</li>
+      <li>Jugo natural - $1800</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Escaneá el QR para ver este menú 📲</p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.menu-section').forEach(s => s.classList.add('hidden'));
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.getElementById(id).classList.remove('hidden');
+      document.querySelector(`.tab[onclick*="${id}"]`).classList.add('active');
+    }
+  </script>
+</body>
+</html>
