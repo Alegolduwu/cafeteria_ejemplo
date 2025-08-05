@@ -59,6 +59,42 @@ li {
 .hidden {
   display: none;
 }
+.infusiones {
+  padding: 20px;
+}
+
+.infusiones h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.infusion-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.infusion-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.infusion-info h3 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.infusion-info p {
+  margin: 5px 0 0;
+  color: #666;
+}
+
 
 footer {
   text-align: center;
