@@ -4,7 +4,7 @@ scroll-behavior: smooth;
 body {
   font-family: sans-serif;
   margin: 0;
-  background: #fff;
+  background: #ffe7c7;
   color: #333;
 }
 
@@ -15,8 +15,8 @@ body {
 }
 
 .logo {
-  width: 80px;
-  border-radius: 8px;
+  width: 200px;
+  border-radius: 3px;
 }
 
 .menu-tabs {
@@ -66,7 +66,7 @@ li {
   padding: 20px;
 }
 
-.infusiones h2 {
+.infusiones h3 {
   text-align: center;
   font-size: 28px;
   margin-bottom: 20px;
@@ -91,11 +91,20 @@ li {
 .infusion-info h3 {
   margin: 0;
   font-size: 22px;
+  color: #0a0707;
 }
+.infusion-info .price {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #0a0707;        /* mismo rojo de los botones */
+  font-size: 1rem;
+}
+
 
 .infusion-info p {
   margin: 5px 0 0;
-  color: #666;
+  color: #000000;
 }
 
 
